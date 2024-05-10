@@ -213,7 +213,7 @@ for turn in range(turns):
         #Check if giving the player the card would put them in a state, 
         #where the only need one additional card to win
         #If they have an ace they can already win with one card
-        if (sum(Gamestate[i])+card.value>=10 
+        if (sum(Gamestate[i])+card.value>10 
             and sum(Gamestate[i])<11
             and 1 not in Gamestate[i]):
             
@@ -236,7 +236,10 @@ for turn in range(turns):
             breaker=True
             break
            
-    
+    if breaker:
+        continue
+
+
     #if all good players would result in a duplicate
     if goodplayers:
         
