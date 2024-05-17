@@ -8,7 +8,7 @@ Created on Sat May 29 20:41:23 2021
 """
 Created on Mon May 24 18:05:46 2021
 
-@author: Hans
+@author: Hanss
 """
 import matplotlib.pyplot as plt
 
